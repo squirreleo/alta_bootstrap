@@ -1,0 +1,201 @@
+/* 
+    Created on : Oct 26, 2013, 2:56:54 PM
+    Author     : Angela Downs
+*/
+
+a {
+  color: #6ba3b9;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #6ba3b9;
+  text-decoration: underline;
+}
+
+i {
+    color: #426a5c;
+}
+
+i.fa.fa-facebook-square {
+    color: #3b5998;
+    font-size: 1.5em;
+}
+
+p.navbar-text.navbar-right i {
+    color: #ddd;
+}
+
+p.navbar-text.navbar-right a {
+    line-height: .5em;
+} 
+
+a#email {
+    color: #ddd;
+}
+
+.dots {
+    color: #6ba3b9;
+}
+
+.jumbotron {
+  background-image: url('../images/header.jpg');
+}
+
+.jumbotron h1, h4 {
+        color: #fff;
+}
+
+.jumbotron p {
+        color: #fff;
+}
+
+.well blockquote {
+    color: #426a5c;
+}
+
+.navbar-inverse {
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7ba9a3), color-stop(50%, #52907f), to(#4c604e));
+  background-image: -webkit-linear-gradient(#7ba9a3, #52907f 50%, #4c604e);
+  background-image: -moz-linear-gradient(top, #7ba9a3, #52907f 50%, #4c604e);
+  background-image: linear-gradient(#7ba9a3, #52907f 50%, #4c604e);
+  background-repeat: no-repeat;
+  border: 1px solid #426a5c;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7ba9a3', endColorstr='#ff4c604e', GradientType=0);
+  filter: none;
+}
+
+.btn-primary,
+.btn-primary:hover {
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#7ba9a3), color-stop(50%, #52907f), to(#4c604e));
+  background-image: -webkit-linear-gradient(#7ba9a3, #52907f 50%, #4c604e);
+  background-image: -moz-linear-gradient(top, #7ba9a3, #52907f 50%, #4c604e);
+  background-image: linear-gradient(#7ba9a3, #52907f 50%, #4c604e);
+  background-repeat: no-repeat;
+  border: 1px solid #426a5c;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff7ba9a3', endColorstr='#ff4c604e', GradientType=0);
+}
+
+div.row.row-offcanvas.row-offcanvas-right {
+    padding-top: 25px;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  background: #52907f;
+}
+
+.panel-info {
+  border-color: #bb4500;
+  margin: 25px 0px;
+}
+
+.panel-info > .panel-heading {
+  background: #bb4500;
+  border-color: #bb4500;
+}
+
+.panel-info > .panel-heading h3 {
+    color: #fff;
+}
+
+/* Offset Page Styles*/
+.jumbotron i.fa.fa-cog {
+    color: #fff;
+}
+
+.jumbotron#offset {
+  background-image: url('../images/offset-jumbotron.jpg');
+}
+
+/* Digital Page Styles*/
+.jumbotron i.fa.fa-file {
+    color: #fff;
+}
+
+.jumbotron#digital {
+    /* background-image: url('../images/digital-jumbotron.jpg'); */
+    background: #4c2f48;
+}
+
+/* Mailing Page Styles*/
+.jumbotron i.fa.fa-envelope-o {
+    color: #fff;
+}
+
+.jumbotron#mailing {
+    background-image: url('../images/mailing-jumbotron.jpg'); 
+}
+
+/* Publishing Page Styles*/
+.jumbotron i.fa.fa-book {
+    color: #fff;
+}
+
+.jumbotron#publishing {
+    background-image: url('../images/publishing-jumbotron.jpg');
+}
+
+/* Resources Page Styles*/
+.jumbotron i.fa.fa-lightbulb-o {
+    color: #fff;
+}
+
+.jumbotron#resources {
+    background-image: url('../images/resources-jumbotron.jpg');
+    /* background: #4c2f48;  */
+}
+
+.thumbnail {
+    border: none;
+}
+
+a.thumbnail:hover,
+a.thumbnail:focus {
+    text-decoration: none;
+}
+
+a:hover#sustainability {
+    text-decoration: none;
+}
+
+/* Contact Page Styles*/
+.jumbotron i.fa.fa-phone {
+    color: #fff;
+}
+
+.jumbotron#contact {
+  background: #4c2f48;
+}
+
+/* Quote Page Styles*/
+.jumbotron i.fa.fa-pencil-square-o {
+    color: #fff;
+}
+
+.jumbotron#quote {
+  background: #4c2f48;
+}
+
+/* About Page Styles */
+.jumbotron i.fa.fa-group {
+    color: #fff;
+}
+
+h4.media-heading {
+    color: #2d2d2d;
+}
+
+a:hover#staff {
+    text-decoration: none;
+}
+
+a.accordion-toggle {
+    color: #6ba3b9;
+}
+
+a:hover.accordion-toggle {
+    text-decoration: none;
+}
