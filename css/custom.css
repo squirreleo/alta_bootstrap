@@ -170,6 +170,13 @@ a:hover#sustainability {
   background: #4c2f48;
 }
 
+input[aria-invalid="true"],
+textarea[aria-invalid="true"]
+{
+    border: 1px solid #f00;
+    box-shadow: 0 0 4px 0 #f00;
+}
+
 /* Quote Page Styles*/
 .jumbotron i.fa.fa-pencil-square-o {
     color: #fff;
@@ -198,4 +205,22 @@ a.accordion-toggle {
 
 a:hover.accordion-toggle {
     text-decoration: none;
+}
+
+/* Thank You Page Styles */
+.jumbotron i.fa.fa-check-square-o {
+    color: #fff;
+}
+
+.jumbotron#thankyou {
+  background: #4c2f48;
+}
+
+/* Error Page Styles */
+.jumbotron i.fa.fa-ambulance {
+    color: #fff;
+}
+
+.jumbotron#error {
+  background: #4c2f48;
 }
