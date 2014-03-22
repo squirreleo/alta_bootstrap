@@ -1,5 +1,5 @@
 <?php
-  include_once("wsp_captcha.php");
+ include_once("wsp_captcha.php");
 
   if (WSP_CheckImageCode() != "OK") {
     die("The image code you have entered is incorrect. Please, click the 'Back' button of your browser and type the correct one.");
@@ -20,9 +20,9 @@
  
   $body = "The following information was submitted via the Contact form on Alta's Web site:\n\n"; foreach($fields as $a => $b){ 	$body .= sprintf("%20s: %s\n",$b,$_REQUEST[$a]); } 
  
-  if($from == '') {header('Location: http://www.angeladowns.com/alta/error.html');} 
+  if($from === '') {header('Location: http://www.angeladowns.com/alta/error.html');} 
   else { 
-  if($name == '') {header('Location: http://www.angeladowns.com/alta/error.html');} 
+  if($name === '') {header('Location: http://www.angeladowns.com/alta/error.html');} 
   else { 
   $send = mail($to, $subject, $body, $headers); 
   
