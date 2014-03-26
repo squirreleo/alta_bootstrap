@@ -70,56 +70,96 @@
           </div>
           <div class="row">
             <div class="col-lg-11 pull-left-1">
-<form class="form-horizontal" role="form">
-  <div class="form-group">
-    <label for="inputName" class="col-sm-2 control-label">Name</label>
+<form class="form-horizontal" role="form" name="quoteForm" id="quoteForm" novalidate>
+    <noscript>
+        <p class="alert alert-danger">You must have JavaScript enabled to submit this form. Please contact us at (352) 372-2534.</p>
+    </noscript>    
+  <div class="control-group">
+      <div class="controls">
+    <label for="inputName" class="col-sm-2 control-label">Name<sup>*</sup></label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputName" placeholder="Full Name">
+      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Full Name" required data-validation-required-message="Please enter your full name">
+      <p class="help-block"></p>
+    </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="control-group">
+      <div class="controls">
     <label for="inputCompany" class="col-sm-2 control-label">Company</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputCompany" placeholder="Company Name">
+      <input type="text" class="form-control" id="inputCompany" name="inputCompany" placeholder="Company Name">
+      <p class="help-block"></p>
     </div>
+      </div>
   </div>
-  <div class="form-group">
-    <label for="inputEmail" class="col-sm-2 control-label">Email</label>
+  <div class="control-group">
+      <div class="controls">
+    <label for="inputEmail" class="col-sm-2 control-label">Email<sup>*</sup></label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required data-validation-required-message="Please enter a valid email">
+      <p class="help-block"></p>
     </div>
+      </div>
   </div>
-  <div class="form-group">
+  <div class="control-group">
+      <div class="controls">
     <label for="inputPhone" class="col-sm-2 control-label">Phone</label>
     <div class="col-sm-10">
-      <input type="tel" class="form-control" id="inputPhone" placeholder="XXX-XXX-XXXX">
+      <input type="tel" class="form-control" id="inputPhone" name="inputPhone" placeholder="XXX-XXX-XXXX">
+      <p class="help-block"></p>
     </div>
+      </div>
   </div>
-<div class="form-group">
-    <label for="inputQuantity" class="col-sm-2 control-label">Quantity</label>
+<div class="control-group">
+    <div class="controls">
+    <label for="inputQuantity" class="col-sm-2 control-label">Quantity<sup>*</sup></label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputQuantity" placeholder="ex. 5,000 or 10,000">
+      <input type="text" class="form-control" id="inputQuantity" name="inputQuantity" placeholder="ex. 5,000 or 10,000" required data-validation-required-message="Please input at least one quantity">
+      <p class="help-block"></p>
+    </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="control-group">
+      <div class="controls">
     <label for="inputProject" class="col-sm-2 control-label">Project Name</label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputProject" placeholder="ex. Festival Brochure">
+      <input type="text" class="form-control" id="inputProject" name="inputProject" placeholder="ex. Festival Brochure" required data-validation-required-message="Please provide a name for your project">
+      <p class="help-block"></p>
     </div>
+      </div>
   </div>
-  <div class="form-group">
-    <label for="inputDate" class="col-sm-2 control-label">Date Needed</label>
+  <div class="control-group">
+      <div class="controls">
+    <label for="inputDate" class="col-sm-2 control-label">Date Needed<sup>*</sup></label>
     <div class="col-sm-10">
-      <input type="date" class="form-control" id="inputDate" placeholder="DD/MM/YYYY">
+        <input type="date" class="form-control" id="inputDate" name="inputDate" placeholder="MM/DD/YYYY" data-validation-required-message="Please enter a date in the format MM/DD/YYYY">
+      <p class="help-block"></p>
     </div>
+      </div>
   </div>    
-<div class="form-group">
-    <label for="inputNotes" class="col-sm-2 control-label">Details</label>
+<div class="control-group">
+    <div class="controls">
+    <label for="inputNotes" class="col-sm-2 control-label">Details<sup>*</sup></label>
     <div class="col-sm-10">
-        <textarea class="form-control" rows="5"></textarea>
+        <textarea class="form-control" id="inputNotes" name="inputNotes" rows="5" placeholder="Please describe your project: ink, paper, folds, etc." required data-validation-required-message="Please describe your project"></textarea>        <p class="help-block"></p>
+    </div>
     </div>
   </div>
-  <div class="form-group">
+<label class="col-sm-2"></label>
+    <div class="col-sm-10 control-group">
+        <div class="controls">
+        <label><input type="checkbox" id="notcaptcha" name="notcaptcha" required data-validation-required-message="Please check the box to submit the form"> Check this box before submitting the form
+        </label>
+        </div>
+    </div>
+  <div class="control-group">
+    <div class="col-sm-offset-2 col-sm-10"> 
+        <div id="success">
+
+        </div>
+    </div>
+  </div>      
+  <div class="control-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
@@ -173,5 +213,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/offcanvas.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/quote.js"></script>    
   </body>
 </html>
