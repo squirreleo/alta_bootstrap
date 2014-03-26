@@ -70,52 +70,70 @@
           </div>
           <div class="row">
             <div class="col-lg-11 pull-left">
-<form class="form-horizontal" role="form" method="post" action="contact.php" name="contactForm">
-  <div class="form-group">
+<form class="form-horizontal" role="form" name="contactForm" novalidate>
+    <noscript>
+        <p class="alert alert-danger">You must have JavaScript enabled to submit this form. Please contact us at (352) 372-2534.</p>
+    </noscript>
+  <div class="control-group">
+      <div class="controls">
       <label for="inputName" class="col-sm-2 control-label">Name<sup>*</sup></label>
     <div class="col-sm-10">
-      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Full Name" required="required" aria-required="true" pattern="^([- \w\d\u00c0-\u024f]+)$">
+      <input type="text" class="form-control" id="inputName" name="inputName" placeholder="Full Name" required data-validation-required-message="Please enter your full name" />
+      <p class="help-block"></p>
     </div>
+      </div>
   </div>
-  <div class="form-group">
+  <div class="control-group">
+      <div class="controls">
     <label for="inputCompany" class="col-sm-2 control-label">Company</label>
     <div class="col-sm-10">
       <input type="text" class="form-control" id="inputCompany" name="inputCompany" placeholder="Company Name">
+      <p class="help-block"></p>
+    </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="control-group">
+      <div class="controls">
     <label for="inputEmail" class="col-sm-2 control-label">Email<sup>*</sup></label>
     <div class="col-sm-10">
-      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required="required" aria-required="true" pattern="^(([-\w\d]+)(\.[-\w\d]+)*@([-\w\d]+)(\.[-\w\d]+)*(\.([a-zA-Z]{2,5}|[\d]{1,3})){1,2})$">
+      <input type="email" class="form-control" id="inputEmail" name="inputEmail" placeholder="Email" required data-validation-required-message="Please enter a valid email">
+      <p class="help-block"></p>
+    </div>
     </div>
   </div>
-  <div class="form-group">
+  <div class="control-group">
+      <div class="controls">
     <label for="inputPhone" class="col-sm-2 control-label">Phone</label>
     <div class="col-sm-10">
       <input type="tel" class="form-control" id="inputPhone" name="inputPhone" placeholder="XXX-XXX-XXXX">
+      <p class="help-block"></p>
+    </div>
     </div>
   </div>
-<div class="form-group">
-    <label for="inputNotes" class="col-sm-2 control-label">Details</label>
+<div class="control-group">
+    <div class="controls">
+    <label for="inputNotes" class="col-sm-2 control-label">Details<sup>*</sup></label>
     <div class="col-sm-10">
-        <textarea class="form-control" id="inputNotes" name="inputNotes" rows="10"></textarea>
+        <textarea class="form-control" id="inputNotes" name="inputNotes" rows="10" required data-validation-required-message="Please enter a message for our customer service team"></textarea>
+        <p class="help-block"></p>
+    </div>
     </div>
 </div>
-<div class="form-group">
-    <label for="captchaEntry" class="col-sm-2 control-label">Verify</label>
-  <div class="col-sm-10 pull-left">
-    <input class="form-control input-small" type="text" name="wsp_code" placeholder="Type the code shown below"/>
+<label class="col-sm-2"></label>
+    <div class="col-sm-10 control-group">
+        <div class="controls">
+        <label><input type="checkbox" id="notcaptcha" name="notcaptcha" required data-validation-required-message="Please check the box to submit the form"> Check this box before submitting the form
+        </label>
+        </div>
     </div>
- </div>
- <div class="form-group">
-     <label for="captcha" class="col-sm-2 control-label"></label>
-    <div class="col-sm-10 pull-left">
-    <script type="text/javascript" src="http://webspamprotect.com/captcha/6355/"></script>
-    <noscript>This form protected by <a href="http://webspamprotect.com" target="_blank" title="Web form spam protection">WebSpamProtect</a>. JavaScript must be enabled in your browser to view this image.
-    </noscript>
+  <div class="control-group">
+    <div class="col-sm-offset-2 col-sm-10"> 
+        <div id="success">
+
+        </div>
     </div>
-</div> 
-  <div class="form-group">
+  </div>      
+  <div class="control-group">
     <div class="col-sm-offset-2 col-sm-10">
       <button type="submit" class="btn btn-primary">Submit</button>
     </div>
@@ -169,6 +187,7 @@
     <script src="http://code.jquery.com/jquery-latest.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/offcanvas.js"></script>
-    <script src="js/custom.js"></script>
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact.js"></script>
   </body>
 </html>
