@@ -161,6 +161,10 @@ a:hover#sustainability {
     text-decoration: none;
 }
 
+cite {
+    font-size: 12px;
+}
+
 /* Contact Page Styles*/
 .jumbotron i.fa.fa-phone {
     color: #fff;
