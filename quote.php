@@ -23,7 +23,7 @@ $date = $_POST['date'];
 $details = $_POST['details'];
 
 // create email body and send it	
-$to = 'alynch1224@yahoo.com'; 
+$to = 'terrya@altainc.com'; 
 $email_subject = "Quote request form submitted by:  $name";
 $email_body = "You have received a new message via the quote request form on Alta's Web site. \n\n".
 				  "Name: $name \n ".

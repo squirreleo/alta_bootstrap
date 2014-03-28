@@ -18,7 +18,7 @@ $phone = $_POST['phone'];
 $message = $_POST['message'];
 
 // create email body and send it	
-$to = 'alynch1224@yahoo.com'; 
+$to = 'terrya@altainc.com'; 
 $email_subject = "Contact form submitted by:  $name";
 $email_body = "You have received a new message via the contact form on Alta's Web site. \n\n".
 				  "Name: $name \n ".
