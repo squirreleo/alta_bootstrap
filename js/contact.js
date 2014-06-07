@@ -39,7 +39,7 @@ $(function() {
                             // fail message
                             $('#success').html("<div class='alert alert-danger'>");
                             $('#success > .alert-danger').html("<button class='close' type='button' data-dismiss='alert' aria-hidden='true'>&times;").append("</button>");
-                            $('#success > .alert-danger').append("<strong>Error! " + firstName + ", please verify that you have entered your name and a valid email address.</strong> You can contact us directly at <a href='mailto:alynch1224@yahoo.com?Subject=Contact Request'>alynch1224@yahoo.com</a> or (352) 372-2534.");
+                            $('#success > .alert-danger').append("<strong>Error! " + firstName + ", please verify that you have entered your name and a valid email address.</strong> You can contact us directly at <a href='mailto:sales@altainc.com?Subject=Contact Request'>sales@altainc.com</a> or (352) 372-2534.");
                             $('#success > .alert-danger').append('</div>');
                             
                             // Clear all fields
