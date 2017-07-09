@@ -23,7 +23,7 @@ $date = $_POST['date'];
 $details = $_POST['details'];
 
 // create email body and send it	
-$to = 'sales@altainc.com'; 
+$to = 'quoterequest@altainc.com'; 
 $email_subject = "Quote request form submitted by:  $name";
 $email_body = "You have received a new message via the quote request form on Alta's Web site. \n\n".
 				  "Name: $name \n ".
@@ -34,6 +34,6 @@ $email_body = "You have received a new message via the quote request form on Alt
                                   "Project Name: $proj_name\n".
                                   "Date Needed: $date\n".
                                   "Details: $details";
-$headers = "From: sales@altainc.com\n";  // change to sales@altainc.com to avoid junk folder?
+$headers = "From: quoterequest@altainc.com\n"; 
 $headers .= "Reply-To: $email_address";	
 mail($to,$email_subject,$email_body,$headers);
